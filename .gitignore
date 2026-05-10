@@ -1,3 +1,8 @@
 
 .DS_Store
 **/.DS_Store
+
+# Finder duplicates and backups
+* 2/
+* 2.html
+*.bak
