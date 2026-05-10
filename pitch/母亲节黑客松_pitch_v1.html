@@ -728,19 +728,31 @@
   // 视频源策略：本地 file:// 协议优先用本地原文件（直读最流畅）；
   // 在线场景（http/https）优先 CDN 直链（GitHub Releases，Azure CDN，支持 range 流式）；
   // CDN 加载失败时自动回落到本地相对路径，保证演示万无一失。
+  // 注：必须用 <source type="video/mp4"> 显式声明 MIME，
+  // 因为 GitHub Release CDN 返回 application/octet-stream，
+  // 部分浏览器（如 Safari）会因此拒绝解码视频。
   (function () {
     var preferLocal = location.protocol === 'file:';
+    function setSource(v, url) {
+      v.innerHTML = '';
+      var s = document.createElement('source');
+      s.src = url;
+      s.type = 'video/mp4';
+      v.appendChild(s);
+      v.load();
+    }
     document.querySelectorAll('video[data-cdn][data-local]').forEach(function (v) {
       var cdn = v.getAttribute('data-cdn');
       var local = v.getAttribute('data-local');
-      v.src = preferLocal ? local : cdn;
+      var primary = preferLocal ? local : cdn;
+      var fallback = preferLocal ? cdn : local;
+      setSource(v, primary);
       var fallbackTried = false;
       v.addEventListener('error', function () {
         if (fallbackTried) return;
         fallbackTried = true;
-        v.src = preferLocal ? cdn : local;
-        v.load();
-      });
+        setSource(v, fallback);
+      }, true);
     });
   })();
 </script>
