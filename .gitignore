@@ -6,3 +6,8 @@
 * 2/
 * 2.html
 *.bak
+
+# pitch 演示图片必须纳入版本控制，覆盖全局 ignore 的 *.png/*.jpg/*.jpeg
+!pitch/可展示图片/*.png
+!pitch/可展示图片/*.jpg
+!pitch/可展示图片/*.jpeg
