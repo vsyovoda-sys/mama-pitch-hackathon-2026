@@ -25,15 +25,15 @@
     position:fixed;top:0;left:0;right:0;z-index:99;
     background:rgba(27,27,27,0.92);backdrop-filter:blur(8px);
     color:#F7F4EE;padding:10px 28px;
-    display:flex;align-items:center;gap:18px;font-size:17px;
+    display:flex;align-items:center;gap:18px;font-size:13px;
     border-bottom:1px solid rgba(255,255,255,0.08);
   }
   .nav .brand{font-weight:800;letter-spacing:1px;color:#D8492A}
   .nav .brand small{color:#bbb;font-weight:400;margin-left:6px;letter-spacing:0.5px}
   .nav .links{display:flex;gap:6px;flex:1;justify-content:center;flex-wrap:wrap}
-  .nav a{color:#ddd;text-decoration:none;padding:4px 10px;border-radius:4px;font-size:16.5px}
+  .nav a{color:#ddd;text-decoration:none;padding:4px 10px;border-radius:4px;font-size:12px}
   .nav a:hover{background:rgba(255,255,255,0.08);color:#fff}
-  .nav .meta{font-size:15.4px;color:#999}
+  .nav .meta{font-size:11px;color:#999}
 
   .deck{padding:56px 0 40px}
   .slide{
@@ -44,12 +44,11 @@
     box-shadow:0 8px 30px rgba(0,0,0,0.35);
     border-radius:6px;
     scroll-margin-top:60px;
-    overflow:hidden;
   }
   .slide::after{
     content:attr(data-page) " / 8";
     position:absolute;right:28px;bottom:18px;
-    font-size:15.4px;color:var(--mute);letter-spacing:1px;
+    font-size:11px;color:var(--mute);letter-spacing:1px;
   }
 
   /* P0 项目概要 */
@@ -66,11 +65,11 @@
   }
   .p0 .logo-box img{width:100%;display:block;border-radius:12px}
   .p0 .name-line{
-    font-size:66.5px;font-weight:900;letter-spacing:-1px;line-height:1.05;color:var(--ink);margin:0 0 14px;
+    font-size:56px;font-weight:900;letter-spacing:-1px;line-height:1.05;color:var(--ink);margin:0 0 14px;
   }
   .p0 .name-line span{color:var(--accent)}
   .p0 .pitch-line{
-    font-size:23.4px;line-height:1.7;color:#1B1B1B;margin:0 0 22px;font-weight:500;
+    font-size:18px;line-height:1.7;color:#1B1B1B;margin:0 0 22px;font-weight:500;
   }
   .p0 .pitch-line b{color:var(--accent)}
   .p0 .team-row{
@@ -78,79 +77,79 @@
     padding:14px 18px;background:#fff;border-radius:10px;border:1px solid var(--line);
     margin-bottom:20px;
   }
-  .p0 .team-row .label{font-size:15.4px;color:var(--mute);letter-spacing:2px;font-weight:700}
-  .p0 .team-row .team-name{font-size:18px;font-weight:800;color:var(--accent2)}
-  .p0 .team-row .members{font-size:17px;color:#3a3a3a;letter-spacing:0.5px}
+  .p0 .team-row .label{font-size:11px;color:var(--mute);letter-spacing:2px;font-weight:700}
+  .p0 .team-row .team-name{font-size:14px;font-weight:800;color:var(--accent2)}
+  .p0 .team-row .members{font-size:13px;color:#3a3a3a;letter-spacing:0.5px}
   .p0 .why-hook{
-    font-size:41.4px;font-weight:800;color:var(--accent);letter-spacing:-0.3px;
+    font-size:30px;font-weight:800;color:var(--accent);letter-spacing:-0.3px;
     border-left:5px solid var(--accent);padding-left:18px;line-height:1.3;
   }
   .p0 .footer-line{
     position:absolute;bottom:30px;left:64px;right:64px;
-    display:flex;justify-content:space-between;font-size:16.5px;color:var(--mute);letter-spacing:1px;
+    display:flex;justify-content:space-between;font-size:12px;color:var(--mute);letter-spacing:1px;
     padding-top:14px;border-top:1px solid var(--line);
   }
 
   /* P2 团队动机 */
-  .p2t-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:8px}
+  .p2t-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:8px}
   .motive{
-    background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px 14px;
+    background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:20px 18px;
     display:flex;flex-direction:column;
   }
   .motive .who{
-    font-size:13px;color:var(--accent);letter-spacing:0.5px;font-weight:800;margin-bottom:8px;
-    padding-bottom:8px;border-bottom:1px dashed var(--line);
+    font-size:11px;color:var(--accent);letter-spacing:0.5px;font-weight:800;margin-bottom:10px;
+    padding-bottom:10px;border-bottom:1px dashed var(--line);
   }
   .motive .who big{font-size:20px;display:block;color:var(--ink);font-weight:800;margin-bottom:2px;letter-spacing:-0.5px}
-  .motive p{font-size:14px;line-height:1.6;color:#1B1B1B;margin:0;flex:1}
+  .motive p{font-size:13px;line-height:1.7;color:#1B1B1B;margin:0;flex:1}
   .motive p em{font-style:normal;background:var(--warm);padding:0 4px;border-radius:2px}
   .p2t-bottom{
-    margin-top:18px;background:var(--ink);color:#F7F4EE;border-radius:10px;padding:18px 22px;
-    font-size:16px;line-height:1.65;
+    margin-top:22px;background:var(--ink);color:#F7F4EE;border-radius:10px;padding:20px 24px;
+    font-size:15px;line-height:1.7;
   }
   .p2t-bottom b{color:#F4A481}
   .slide-head{
     display:flex;align-items:flex-end;justify-content:space-between;
-    border-bottom:2px solid var(--ink);padding-bottom:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--ink);padding-bottom:14px;margin-bottom:24px;
   }
   .slide-head h2{
-    font-size:36px;font-weight:800;margin:0;letter-spacing:-0.3px;line-height:1.25;
+    font-size:34px;font-weight:800;margin:0;letter-spacing:-0.3px;line-height:1.25;
   }
   .slide-head h2 small{
-    display:block;font-size:18px;font-weight:600;color:var(--mute);letter-spacing:2px;margin-bottom:6px;
+    display:block;font-size:18px;font-weight:600;color:var(--mute);letter-spacing:2px;margin-bottom:8px;
   }
   .slide-head .tag{
-    font-size:15px;color:var(--mute);letter-spacing:1px;
+    font-size:14px;color:var(--mute);letter-spacing:1px;
     border:1px solid var(--line);padding:5px 12px;border-radius:20px;
   }
 
   .lead-quote{
-    font-size:25.5px;line-height:1.55;font-weight:600;
+    font-size:20px;line-height:1.55;font-weight:600;
     border-left:4px solid var(--accent);padding-left:18px;color:#1B1B1B;
   }
   .lead-quote em{font-style:normal;background:var(--warm);padding:0 4px;border-radius:2px}
 
   /* ============ P1 ============ */
-  .p1-grid{display:grid;grid-template-columns:260px 1fr;gap:32px;align-items:start}
+  .p1-grid{display:grid;grid-template-columns:380px 1fr;gap:40px;align-items:start}
   .phone-frame{
-    background:#1B1B1B;border-radius:24px;padding:8px;
+    background:#1B1B1B;border-radius:32px;padding:14px;
     box-shadow:0 14px 40px rgba(0,0,0,0.25);
   }
-  .phone-frame img{width:100%;display:block;border-radius:16px}
+  .phone-frame img{width:100%;display:block;border-radius:22px}
   .p1-right h3{
-    font-size:36px;line-height:1.3;font-weight:800;margin:0 0 16px;letter-spacing:-0.3px;
+    font-size:34px;line-height:1.35;font-weight:800;margin:0 0 22px;letter-spacing:-0.3px;
   }
   .p1-right h3 mark{background:var(--warm);padding:2px 6px;border-radius:3px}
   .story-box{
     background:var(--paper);border:1px solid var(--line);border-radius:10px;
-    padding:16px 20px;margin-bottom:14px;
+    padding:20px 24px;margin-bottom:18px;
   }
-  .story-box .label{font-size:14px;color:var(--accent);letter-spacing:2px;font-weight:700;margin-bottom:6px}
-  .story-box p{margin:0;font-size:16px;line-height:1.65;color:#3a3a3a}
-  .story-box p + p{margin-top:6px}
+  .story-box .label{font-size:11px;color:var(--accent);letter-spacing:2px;font-weight:700;margin-bottom:6px}
+  .story-box p{margin:0;font-size:15px;line-height:1.7;color:#3a3a3a}
+  .story-box p + p{margin-top:8px}
   .insight-strip{
-    background:var(--ink);color:#fff;padding:14px 20px;border-radius:8px;
-    font-size:17px;line-height:1.55;font-weight:600;
+    background:var(--ink);color:#fff;padding:18px 22px;border-radius:8px;
+    font-size:16px;line-height:1.6;font-weight:600;
   }
   .insight-strip span{color:#F4A481}
 
@@ -161,32 +160,32 @@
     padding:22px 24px;
   }
   .col-card h4{
-    font-size:18px;color:var(--accent);letter-spacing:1.5px;margin:0 0 12px;font-weight:800;
+    font-size:14px;color:var(--accent);letter-spacing:1.5px;margin:0 0 12px;font-weight:800;
   }
-  .col-card .sub{font-size:15.4px;color:var(--mute);letter-spacing:1px;margin-left:8px;font-weight:500}
+  .col-card .sub{font-size:11px;color:var(--mute);letter-spacing:1px;margin-left:8px;font-weight:500}
 
   /* P2: 社媒原声 */
-  .voice-list{display:flex;flex-direction:column;gap:10px}
+  .voice-list{display:flex;flex-direction:column;gap:14px}
   .voice{
-    background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:12px 18px;
+    background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:16px 20px;
     position:relative;
   }
-  .voice .from{font-size:14px;color:var(--mute);letter-spacing:1px;margin-bottom:6px;font-weight:600}
+  .voice .from{font-size:11px;color:var(--mute);letter-spacing:1px;margin-bottom:6px;font-weight:600}
   .voice .from b{color:var(--accent);font-weight:700}
-  .voice .text{font-size:14.5px;line-height:1.6;color:#1B1B1B}
+  .voice .text{font-size:14.5px;line-height:1.65;color:#1B1B1B}
   .voice .text em{font-style:normal;background:var(--warm);padding:0 3px}
   .p2-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:28px;align-items:start}
   .p2-grid .right{display:flex;flex-direction:column;gap:14px}
   .stat-card{
-    background:#1B1B1B;color:#fff;border-radius:10px;padding:14px 18px;
+    background:#1B1B1B;color:#fff;border-radius:10px;padding:18px 20px;
   }
-  .stat-card .num{font-size:36px;font-weight:800;color:#F4A481;letter-spacing:-1px;line-height:1.1}
-  .stat-card .desc{font-size:14px;line-height:1.5;color:#ccc;margin-top:6px}
+  .stat-card .num{font-size:32px;font-weight:800;color:#F4A481;letter-spacing:-1px;line-height:1.1}
+  .stat-card .desc{font-size:12px;line-height:1.5;color:#ccc;margin-top:6px}
   .douban-img{
     border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#fff;
   }
   .douban-img img{width:100%;display:block}
-  .douban-img .cap{font-size:15.4px;color:var(--mute);padding:6px 10px;border-top:1px solid var(--line)}
+  .douban-img .cap{font-size:11px;color:var(--mute);padding:6px 10px;border-top:1px solid var(--line)}
 
   /* P3: 担忧 / 收割链 */
   .worry-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:22px}
@@ -194,28 +193,28 @@
     background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:18px 16px;
     text-align:center;
   }
-  .worry-stat .n{font-size:36px;font-weight:800;color:var(--accent);letter-spacing:-0.5px;line-height:1.1}
-  .worry-stat .l{font-size:14px;color:#3a3a3a;line-height:1.5;margin-top:8px}
+  .worry-stat .n{font-size:30px;font-weight:800;color:var(--accent);letter-spacing:-0.5px;line-height:1.1}
+  .worry-stat .l{font-size:12px;color:#3a3a3a;line-height:1.5;margin-top:8px}
   .chain{
     background:#1B1B1B;color:#F7F4EE;border-radius:12px;padding:24px 28px;
   }
-  .chain h4{font-size:15px;color:#F4A481;letter-spacing:2px;margin:0 0 14px;font-weight:800}
+  .chain h4{font-size:13px;color:#F4A481;letter-spacing:2px;margin:0 0 16px;font-weight:800}
   .chain-flow{display:grid;grid-template-columns:repeat(4,1fr) auto;gap:8px;align-items:stretch}
   .chain-step{
     background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);
-    border-radius:8px;padding:12px 12px;font-size:13px;line-height:1.45;
-    display:flex;flex-direction:column;justify-content:space-between;min-height:110px;
+    border-radius:8px;padding:14px 14px;font-size:12.5px;line-height:1.45;
+    display:flex;flex-direction:column;justify-content:space-between;min-height:120px;
   }
-  .chain-step .stage{font-size:14px;color:#F4A481;letter-spacing:1.5px;font-weight:700;margin-bottom:6px}
-  .chain-step .name{font-size:16px;font-weight:700;margin-bottom:6px;color:#fff}
-  .chain-step .ev{color:#bbb;font-size:13px;line-height:1.5}
+  .chain-step .stage{font-size:10px;color:#F4A481;letter-spacing:1.5px;font-weight:700;margin-bottom:6px}
+  .chain-step .name{font-size:14px;font-weight:700;margin-bottom:6px;color:#fff}
+  .chain-step .ev{color:#bbb;font-size:11.5px;line-height:1.5}
   .chain-arrow{
-    align-self:center;color:#F4A481;font-weight:800;font-size:23.4px;padding:0 4px;
+    align-self:center;color:#F4A481;font-weight:800;font-size:18px;padding:0 4px;
     display:none; /* using grid gap instead */
   }
   .chain-final{
     margin-top:14px;padding-top:14px;border-top:1px dashed rgba(255,255,255,0.2);
-    font-size:15px;color:#fff;line-height:1.6;
+    font-size:13px;color:#fff;line-height:1.6;
   }
   .chain-final b{color:#F4A481}
 
@@ -226,20 +225,20 @@
     position:relative;
   }
   .fail .ico{
-    position:absolute;top:18px;right:20px;font-size:15.4px;color:var(--mute);letter-spacing:1px;
+    position:absolute;top:18px;right:20px;font-size:11px;color:var(--mute);letter-spacing:1px;
   }
-  .fail h4{font-size:19px;font-weight:800;margin:0 0 4px;color:var(--ink)}
-  .fail .who{font-size:14px;color:var(--accent);letter-spacing:1px;margin-bottom:10px;font-weight:600}
-  .fail p{font-size:14.5px;line-height:1.65;color:#3a3a3a;margin:0}
+  .fail h4{font-size:17px;font-weight:800;margin:0 0 4px;color:var(--ink)}
+  .fail .who{font-size:12px;color:var(--accent);letter-spacing:1px;margin-bottom:12px;font-weight:600}
+  .fail p{font-size:13.5px;line-height:1.7;color:#3a3a3a;margin:0}
   .fail .why{
-    margin-top:10px;padding-top:8px;border-top:1px dashed var(--line);
-    font-size:14px;color:#7A736A;line-height:1.55;
+    margin-top:12px;padding-top:10px;border-top:1px dashed var(--line);
+    font-size:13px;color:#7A736A;line-height:1.6;
   }
   .fail .why b{color:var(--accent)}
   .fail .solve{
-    margin-top:8px;padding:9px 12px;
+    margin-top:8px;padding:10px 12px;
     background:rgba(216,73,42,0.08);border-left:3px solid var(--accent);
-    font-size:14.5px;color:#1B1B1B;line-height:1.55;border-radius:4px;
+    font-size:13px;color:#1B1B1B;line-height:1.6;border-radius:4px;
   }
   .fail .solve b{color:var(--accent);letter-spacing:1px}
 
@@ -249,26 +248,26 @@
     background:#EDEAE3;border-radius:14px;padding:18px;
     box-shadow:0 4px 16px rgba(0,0,0,0.08);
   }
-  .chat-title{font-size:17px;color:var(--mute);text-align:center;margin-bottom:10px;letter-spacing:1px}
+  .chat-title{font-size:13px;color:var(--mute);text-align:center;margin-bottom:10px;letter-spacing:1px}
   .msg{display:flex;gap:8px;margin-bottom:10px;align-items:flex-start}
   .msg.right{flex-direction:row-reverse}
   .avatar{
     width:36px;height:36px;border-radius:50%;flex:0 0 36px;
-    background:var(--accent);color:#fff;font-size:17px;font-weight:700;
+    background:var(--accent);color:#fff;font-size:13px;font-weight:700;
     display:flex;align-items:center;justify-content:center;
   }
   .msg.right .avatar{background:var(--accent2)}
   .msg.ai .avatar{background:#2B3A8C}
   .bubble{
     max-width:70%;background:#fff;border-radius:10px;padding:9px 12px;
-    font-size:15.6px;line-height:1.55;color:#1B1B1B;
+    font-size:12.5px;line-height:1.55;color:#1B1B1B;
     box-shadow:0 1px 2px rgba(0,0,0,0.04);
   }
   .msg.right .bubble{background:#9DE48E}
   .msg.ai .bubble{background:#E8EDFF;border:1px solid #C9D4FF}
-  .bubble .meta{font-size:16.2px;color:var(--mute);margin-top:4px}
+  .bubble .meta{font-size:10px;color:var(--mute);margin-top:4px}
   .bubble.audio{display:flex;align-items:center;gap:8px;font-style:italic;color:#666}
-  .bubble.video{background:#222;color:#ccc;font-size:15.4px;padding:14px;text-align:center;border-radius:8px}
+  .bubble.video{background:#222;color:#ccc;font-size:11px;padding:14px;text-align:center;border-radius:8px}
   .benefit-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
   .benefit-list li{
     background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:16px 20px;
@@ -276,13 +275,13 @@
   }
   .benefit-list .ico{
     width:42px;height:42px;border-radius:8px;background:var(--accent);color:#fff;
-    display:flex;align-items:center;justify-content:center;font-size:23.4px;font-weight:800;
+    display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;
   }
-  .benefit-list b{font-size:19.1px;color:var(--ink);display:block;margin-bottom:4px}
-  .benefit-list span{font-size:17px;line-height:1.6;color:#3a3a3a}
+  .benefit-list b{font-size:15px;color:var(--ink);display:block;margin-bottom:4px}
+  .benefit-list span{font-size:13px;line-height:1.6;color:#3a3a3a}
 
   /* P5: demo 左右布局 */
-  .demo-split{display:grid;grid-template-columns:280px 1fr;gap:28px;align-items:start;margin-top:14px}
+  .demo-split{display:grid;grid-template-columns:340px 1fr;gap:32px;align-items:start;margin-top:18px}
   .demo-video{
     width:100%;background:#000;border-radius:14px;aspect-ratio:9/16;
     overflow:hidden;border:1px solid #222;display:block;
@@ -292,25 +291,25 @@
   .demo-step{
     background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 18px;
   }
-  .demo-step .n{font-size:14px;color:var(--accent);font-weight:700;letter-spacing:1px}
-  .demo-step .t{font-size:17px;font-weight:700;margin:4px 0 6px}
-  .demo-step .d{font-size:14.5px;color:#3a3a3a;line-height:1.6}
+  .demo-step .n{font-size:11px;color:var(--accent);font-weight:700;letter-spacing:1px}
+  .demo-step .t{font-size:15px;font-weight:700;margin:4px 0 6px}
+  .demo-step .d{font-size:13px;color:#3a3a3a;line-height:1.6}
 
   /* P7: 拓展 */
   .p7-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}
   .scenario-box{
     background:#FFF1E8;border:1px solid #F4D9CF;border-radius:12px;padding:22px 24px;
   }
-  .scenario-box .label{font-size:15.4px;color:var(--accent);letter-spacing:2px;font-weight:700;margin-bottom:8px}
-  .scenario-box h4{font-size:23.4px;margin:0 0 12px;font-weight:800}
-  .scenario-box p{font-size:16.9px;line-height:1.7;color:#3a3a3a;margin:0 0 8px}
+  .scenario-box .label{font-size:11px;color:var(--accent);letter-spacing:2px;font-weight:700;margin-bottom:8px}
+  .scenario-box h4{font-size:18px;margin:0 0 12px;font-weight:800}
+  .scenario-box p{font-size:13.5px;line-height:1.7;color:#3a3a3a;margin:0 0 8px}
   .feature-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
   .feature-list li{
-    display:grid;grid-template-columns:24px 1fr;gap:10px;font-size:16.9px;line-height:1.6;
+    display:grid;grid-template-columns:24px 1fr;gap:10px;font-size:13.5px;line-height:1.6;
   }
   .feature-list .dot{
     width:18px;height:18px;border-radius:50%;background:var(--accent);color:#fff;
-    font-size:15.4px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:2px;
+    font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:2px;
   }
   .feature-list b{color:var(--ink)}
 
@@ -326,24 +325,24 @@
   .p8::after{color:#666}
   .p8-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;margin-top:10px}
   .p8 .pull-quote{
-    font-size:24px;line-height:1.55;font-weight:600;
-    border-left:4px solid var(--accent);padding-left:18px;margin-bottom:20px;
+    font-size:24px;line-height:1.6;font-weight:600;
+    border-left:4px solid var(--accent);padding-left:20px;margin-bottom:24px;
   }
   .p8 .pull-quote em{font-style:normal;background:rgba(216,73,42,0.3);padding:0 6px;border-radius:3px}
-  .p8 .narrative p{font-size:16px;line-height:1.8;color:#ddd;margin:0 0 14px}
+  .p8 .narrative p{font-size:15px;line-height:1.85;color:#ddd;margin:0 0 16px}
   .p8 .narrative b{color:#F4A481;font-weight:600}
   .p8 .closing{
     margin-top:32px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.15);
     text-align:center;
   }
   .p8 .closing .name{
-    font-size:49.9px;font-weight:800;color:#fff;letter-spacing:-0.5px;
+    font-size:42px;font-weight:800;color:#fff;letter-spacing:-0.5px;
   }
   .p8 .closing .name span{color:var(--accent)}
   .p8 .closing .slogan{
-    font-size:23.4px;color:#F4A481;margin-top:12px;font-weight:500;letter-spacing:0.5px;
+    font-size:18px;color:#F4A481;margin-top:12px;font-weight:500;letter-spacing:0.5px;
   }
-  .p8 .closing .team{font-size:16.5px;color:#888;margin-top:16px;letter-spacing:2px}
+  .p8 .closing .team{font-size:12px;color:#888;margin-top:16px;letter-spacing:2px}
 
   /* 封面 */
   .cover{
@@ -353,20 +352,20 @@
   }
   .cover::after{display:none}
   .cover .product-name{
-    font-size:114px;font-weight:900;letter-spacing:-2px;line-height:1;margin-bottom:18px;
+    font-size:96px;font-weight:900;letter-spacing:-2px;line-height:1;margin-bottom:18px;
   }
   .cover .product-name small{
-    display:block;font-size:23.4px;font-weight:400;letter-spacing:8px;margin-bottom:14px;color:#FFD9C9;
+    display:block;font-size:18px;font-weight:400;letter-spacing:8px;margin-bottom:14px;color:#FFD9C9;
   }
   .cover .slogan{
-    font-size:39.1px;line-height:1.5;font-weight:500;margin:32px 0 24px;max-width:880px;
+    font-size:28px;line-height:1.5;font-weight:500;margin:32px 0 24px;max-width:880px;
   }
   .cover .desc{
-    font-size:19.1px;line-height:1.85;max-width:760px;color:#FFE6DC;margin-bottom:40px;
+    font-size:15px;line-height:1.85;max-width:760px;color:#FFE6DC;margin-bottom:40px;
   }
   .cover .footer-meta{
     position:absolute;bottom:40px;left:0;right:0;
-    display:flex;justify-content:space-between;padding:0 64px;font-size:16.5px;color:#FFD9C9;letter-spacing:1px;
+    display:flex;justify-content:space-between;padding:0 64px;font-size:12px;color:#FFD9C9;letter-spacing:1px;
   }
   .cover .footer-meta b{color:#fff}
 
@@ -535,7 +534,7 @@
       </div>
     </div>
   </div>
-  <div class="p2t-bottom" style="font-size:18px">
+  <div class="p2t-bottom" style="font-size:17px">
     孩子觉得<b>教不会父母</b>，父母担心<b>孩子忙</b>——这不仅是理解错位，也说明<b>我们的社交工具，从来不为情景中的弱者而设计</b>。
   </div>
 </section>
@@ -548,10 +547,10 @@
   </div>
 
   <div class="worry-grid">
-    <div class="worry-stat"><div class="n">1.61亿</div><div class="l">60 岁以上中国网民<br/><span style="color:#999;font-size:14px">2025 年中</span></div></div>
-    <div class="worry-stat"><div class="n">+23.5%</div><div class="l">北京互联网法院涉老网络消费纠纷<br/><span style="color:#999;font-size:14px">年均增长，2018–2025</span></div></div>
-    <div class="worry-stat"><div class="n">+45%</div><div class="l">2025 全国 AI 换脸/拟声诈骗案件<br/><span style="color:#999;font-size:14px">环比激增</span></div></div>
-    <div class="worry-stat"><div class="n">38%</div><div class="l">AI 诈骗受骗人群中<br/><span style="color:#999;font-size:14px">老年群体占比</span></div></div>
+    <div class="worry-stat"><div class="n">1.61亿</div><div class="l">60 岁以上中国网民<br/><span style="color:#999;font-size:11px">2025 年中</span></div></div>
+    <div class="worry-stat"><div class="n">+23.5%</div><div class="l">北京互联网法院涉老网络消费纠纷<br/><span style="color:#999;font-size:11px">年均增长，2018–2025</span></div></div>
+    <div class="worry-stat"><div class="n">+45%</div><div class="l">2025 全国 AI 换脸/拟声诈骗案件<br/><span style="color:#999;font-size:11px">环比激增</span></div></div>
+    <div class="worry-stat"><div class="n">38%</div><div class="l">AI 诈骗受骗人群中<br/><span style="color:#999;font-size:11px">老年群体占比</span></div></div>
   </div>
 
   <div class="chain">
@@ -603,7 +602,7 @@
   <div class="demo-split">
     <div>
       <video class="demo-video" src="可展示图片/视频demo.mp4" controls playsinline preload="metadata"></video>
-      <div style="font-size:14px;color:#888;margin-top:8px;text-align:center;letter-spacing:0.5px">现场播放位 · 60 秒 Demo</div>
+      <div style="font-size:11px;color:#888;margin-top:8px;text-align:center;letter-spacing:0.5px">现场播放位 · 60 秒 Demo</div>
     </div>
 
     <div class="demo-flow-v">
@@ -668,11 +667,11 @@
     <div style="display:flex;flex-direction:row;gap:14px;align-items:flex-start">
       <figure style="margin:0;flex:1;min-width:0">
         <img src="可展示图片/妈妈拨打社区求助.png" alt="妈妈拨打社区求助" style="width:100%;max-height:440px;object-fit:contain;display:block;background:transparent" />
-        <figcaption style="font-size:14px;color:#888;margin-top:8px;letter-spacing:0.5px;text-align:center">妈妈一键发出"社区求助"</figcaption>
+        <figcaption style="font-size:11px;color:#888;margin-top:8px;letter-spacing:0.5px;text-align:center">妈妈一键发出"社区求助"</figcaption>
       </figure>
       <figure style="margin:0;flex:1;min-width:0">
         <img src="可展示图片/社区志愿者们.png" alt="社区志愿者们" style="width:100%;max-height:440px;object-fit:contain;display:block;background:transparent" />
-        <figcaption style="font-size:14px;color:#888;margin-top:8px;letter-spacing:0.5px;text-align:center">女儿邀请进社区的志愿者接住妈妈</figcaption>
+        <figcaption style="font-size:11px;color:#888;margin-top:8px;letter-spacing:0.5px;text-align:center">女儿邀请进社区的志愿者接住妈妈</figcaption>
       </figure>
     </div>
 
@@ -695,20 +694,20 @@
     <span class="tag">用户回声 · For Mom</span>
   </div>
 
-  <div style="display:grid;grid-template-columns:280px 1fr;gap:28px;align-items:start;margin-top:14px">
+  <div style="display:grid;grid-template-columns:340px 1fr;gap:36px;align-items:start;margin-top:18px">
     <div>
       <video class="demo-video" src="可展示图片/妈妈反馈视频.mp4" controls playsinline preload="metadata"></video>
-      <div style="font-size:14px;color:#888;margin-top:8px;text-align:center;letter-spacing:0.5px">妈妈反馈视频 · 现场播放</div>
+      <div style="font-size:12px;color:#888;margin-top:8px;text-align:center;letter-spacing:0.5px">妈妈反馈视频 · 现场播放</div>
     </div>
 
     <div style="padding-top:8px">
-      <div class="pull-quote" style="font-size:22px;line-height:1.6">
+      <div class="pull-quote" style="font-size:22px;line-height:1.7">
         "希望这个工具不仅能帮助妈妈解决问题，<br/>
         也能<em>缓解问题背后隐性的焦虑</em>；<br/>
         用<em>关怀型的细节设计</em>，<br/>
         帮助妈妈自如地使用手机。"
       </div>
-      <div style="margin-top:18px;font-size:15px;color:#3a3a3a;line-height:1.75">
+      <div style="margin-top:24px;font-size:15px;color:#3a3a3a;line-height:1.8">
         ——这正是我们想做的事：<br/>
         把"解决问题"做成<b>一次次温柔的接住</b>，<br/>
         让妈妈不再为一个弹窗、一笔误订、一个不熟悉的按钮而焦虑；<br/>
