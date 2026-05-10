@@ -644,7 +644,9 @@
 
   <div class="demo-split">
     <div>
-      <video class="demo-video" src="可展示图片/视频demo.mp4" controls playsinline preload="metadata"></video>
+      <video class="demo-video" controls playsinline preload="auto" crossorigin="anonymous"
+        data-cdn="https://github.com/vsyovoda-sys/mama-pitch-hackathon-2026/releases/download/video-assets-v1/demo.mp4"
+        data-local="可展示图片/视频demo.mp4"></video>
       <div style="font-size:14px;color:#888;margin-top:8px;text-align:center;letter-spacing:0.5px">现场播放位 · 60 秒 Demo</div>
     </div>
 
@@ -697,7 +699,9 @@
 
   <div style="display:grid;grid-template-columns:280px 1fr;gap:28px;align-items:start;margin-top:14px">
     <div>
-      <video class="demo-video" src="可展示图片/妈妈反馈视频.mp4" controls playsinline preload="metadata"></video>
+      <video class="demo-video" controls playsinline preload="auto" crossorigin="anonymous"
+        data-cdn="https://github.com/vsyovoda-sys/mama-pitch-hackathon-2026/releases/download/video-assets-v1/default.mp4"
+        data-local="可展示图片/妈妈反馈视频.mp4"></video>
       <div style="font-size:14px;color:#888;margin-top:8px;text-align:center;letter-spacing:0.5px">妈妈反馈视频 · 现场播放</div>
     </div>
 
@@ -719,6 +723,27 @@
 </section>
 
 </main>
+
+<script>
+  // 视频源策略：本地 file:// 协议优先用本地原文件（直读最流畅）；
+  // 在线场景（http/https）优先 CDN 直链（GitHub Releases，Azure CDN，支持 range 流式）；
+  // CDN 加载失败时自动回落到本地相对路径，保证演示万无一失。
+  (function () {
+    var preferLocal = location.protocol === 'file:';
+    document.querySelectorAll('video[data-cdn][data-local]').forEach(function (v) {
+      var cdn = v.getAttribute('data-cdn');
+      var local = v.getAttribute('data-local');
+      v.src = preferLocal ? local : cdn;
+      var fallbackTried = false;
+      v.addEventListener('error', function () {
+        if (fallbackTried) return;
+        fallbackTried = true;
+        v.src = preferLocal ? cdn : local;
+        v.load();
+      });
+    });
+  })();
+</script>
 
 </body>
 </html>
